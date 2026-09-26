@@ -35,7 +35,7 @@ def document_process(path):
     splitter=RecursiveCharacterTextSplitter(chunk_size=1000,chunk_overlap=200)
     docs=splitter.split_documents(docs)
     ##embeddings and vector stors
-    embeddings=GoogleGenerativeAIEmbeddings(model="gemini-embedding-2-preview")
+    embeddings=GoogleGenerativeAIEmbeddings(model="gemini-embedding-2")
     vector_db=InMemoryVectorStore.from_documents(documents=docs,embedding=embeddings)
     st.session_state.vector_db = vector_db
     st.session_state.document_uploaded = True
