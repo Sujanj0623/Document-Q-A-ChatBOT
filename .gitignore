@@ -1,0 +1,6 @@
+env/
+__pycache__/
+*.pyc 
+.env
+uploaded_document.pdf
+fictional_9_page_medical_report.pdf
