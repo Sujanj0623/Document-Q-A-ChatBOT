@@ -3,6 +3,9 @@ import psycopg2
 import hashlib
 import secrets
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 # =========================================================
